@@ -1,29 +1,45 @@
 //webpack.config.js
 // Connect outline modules
 const path = require('path');
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 
 module.exports = {
 // Indicate entry and output - entry point and final bundle name
-    entry: './collector/index.js',
+    entry: {
+        main: './collector/index.js',
+        form_element: './collector/index.js',
+        cards: './collector/index.js',
+        headers_footers: './collector/index.js'
+    },
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, "pages")
+        path: path.resolve(__dirname, "pages"),
     },
     module: {
         rules: [
-            // Add loaders for CSS
             {test: /\.css$/, loader: 'style-loader!css-loader'},
-            {test: /\.pug$/, use: ['html-loader', 'pug-html-loader']}
+            {test: /\.pug$/, use: ['html-loader', 'pug-html-loader']},
+            {
+                test: /\.s[ac]ss$/i, 
+                use: [
+                    {loader: 'style-loader'},
+                    {loader: 'css-loader'},
+                    {loader: 'sass-loader'}
+                ]}
         ]
     },
-     plugins: [
+    plugins: [
         new HtmlWebpackPlugin({
-            filename: 'index.html',
+            title: "Form Element",
             template: './collector/index.pug',
-            inject: false
-        })
-    ]
+            path: './pages/form-element.html'
+        }),
+        new CleanWebpackPlugin({ cleanStaleWebpackAssets: false })
+    ],
+    mode: "development",
+    devServer: {
+        contentBase: './pages',
+    }
 }
