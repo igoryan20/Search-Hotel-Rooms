@@ -1,1 +1,17 @@
-@import '../components/logo/logo.scss'
+@import '../components/other/colors';
+@import '../components/other/fonts/fonts';
+
+@import '../components/logo/logo.scss';
+@import '../components/text_field/text-field.scss';
+
+.logo{
+    margin-top: 1.85em;
+    margin-left: 1.35em;
+}
+
+
+.container {
+    margin-top: 6.75em;
+    margin-left: 8.25em;
+    
+}

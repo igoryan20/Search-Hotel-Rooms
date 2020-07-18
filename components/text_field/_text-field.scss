@@ -1,0 +1,23 @@
+
+@mixin placeholder($color){
+    .text-field__input::placeholder,
+    .text-field__input::-webkit-input-placeholder{
+        color: $color;
+        font-family:'Montserrat', serif;
+    }
+    .text-field__input:-ms-input-placeholder,
+    .text-field__input::-ms-input-placeholder {
+        color: $color;
+    }
+}
+
+.text-field {
+    .text-field__input {
+        border: 1px solid $dark-shade-25;
+        border-radius: 4px;
+        height: 3em;
+        width: 22.5em;
+        padding-left: 1.25em;
+    }
+    @include placeholder($dark-shade-25);    
+}

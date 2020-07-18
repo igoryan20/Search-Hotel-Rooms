@@ -34,9 +34,9 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: "Form Element",
             template: './collector/index.pug',
-            path: './pages/form-element.html'
+            filename: 'form-element.html'
         }),
-        new CleanWebpackPlugin({ cleanStaleWebpackAssets: false })
+        //new CleanWebpackPlugin({ cleanStaleWebpackAssets: false })
     ],
     mode: "development",
     devServer: {
