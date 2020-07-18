@@ -11,7 +11,45 @@
 
 
 .container {
-    margin-top: 6.75em;
+    margin-top: 3em;
     margin-left: 8.25em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .column-one {
+        display: flex;
+        flex-direction: column;
+        .text-fields {
+            display: flex;
+            flex-direction: column;
+            .text-fields_item{
+                margin-bottom: 0.3em;
+                .text-field-description {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    text-transform: uppercase;
+                    .name {
+                        font-family: 'Montserrat', serif;
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: $dark-shade-100;
+                        margin-top: 1.5em;
+                        margin-bottom: 0;
+                        margin-left: 0.25em;
+                    }
+                    .modificator {
+                        font-family: 'Montserrat', serif;
+                        font-size: 12px;
+                        font-weight: bold;
+                        margin-top: 0.8em;
+                        margin-bottom: 0;
+                        line-height: 2.3em;
+                        color: $dark-shade-50;
+                    }
+                }
+            }
+        }
+    }
     
 }
