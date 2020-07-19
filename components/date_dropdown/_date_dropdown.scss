@@ -1,21 +1,19 @@
-
-
-.dropdown {
+.date-dropdown {
     border: 1px solid $dark-shade-25;
     border-radius: 4px;
     height: 3em;
-    width: 89%;
+    width: 100%;
     padding-left: 1.15em;
     font-size: 14px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    .dropdown__text {
+    .date-dropdown__text {
         color: $dark-shade-75;
         font-family: 'Montserrat';
         font-size: 14px;
     }
-    .dropdown__icon {
+    .date-dropdown__icon {
         display: flex;
         justify-content: center;
         align-items: center;

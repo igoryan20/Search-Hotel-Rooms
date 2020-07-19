@@ -20,3 +20,18 @@ html
                         p(class="name") dropdown
                         p(class="modificator") default
                     include ../components/dropdown/dropdown.pug
+                div(class="mask-text-fields-position")
+                    div(class="description")
+                        p(class="name") masked text field
+                        p(class="modificator") default
+                    include ../components/mask_text_field/mask_text_field.pug
+                div(class="date-dropdowns")
+                    div(class="date-dropdown-position")
+                        div(class="description")
+                            p(class="name") date dropdown
+                        include ../components/date_dropdown/date_dropdown.pug
+                    div(class="date-dropdown-position")
+                        div(class="description")
+                            p(class="name") date dropdown
+                        include ../components/date_dropdown/date_dropdown--filled.pug
+

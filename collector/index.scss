@@ -5,6 +5,8 @@
 @import '../components/logo/logo.scss';
 @import '../components/text_field/text-field.scss';
 @import '../components/dropdown/dropdown';
+@import '../components/mask_text_field/mask_text_field';
+@import '../components/date_dropdown/date_dropdown';
 
 .logo{
     margin-top: 1.85em;
@@ -28,6 +30,12 @@
             .text-fields_item{
                 margin-bottom: 0.3em;                
             }
+        }
+        .date-dropdowns {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 95%;
         }
     }
     

@@ -1,0 +1,13 @@
+.mask-text-field {
+
+    .mask-text-field__input {
+        border: 1px solid $dark-shade-25;
+        border-radius: 4px;
+        height: 2.85em;
+        width: 92%;
+        padding-left: 1.15em;
+        font-size: 14px;
+        font-family: 'Montserrat', serif;
+        color: $dark-shade-25;
+    }
+}
