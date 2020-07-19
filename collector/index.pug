@@ -6,12 +6,17 @@ html
             div(class="column-one")
                 div(class="text-fields")
                     div(class="text-fields_item")
-                        div(class="text-field-description")
+                        div(class="description")
                             p(class="name") Text field
                             p(class="modificator") default
                         include ../components/text_field/text-field.pug
                     div(class="text-fields_item")
-                        div(class="text-field-description")
+                        div(class="description")
                             p(class="name") Text field
-                            p(class="modificator") hover/focus
+                            p(class="modificator") hover / focus
                         include ../components/text_field/text-field-focus_hover.pug
+                div(class="dropdown-position")
+                    div(class="description")
+                        p(class="name") dropdown
+                        p(class="modificator") default
+                    include ../components/dropdown/dropdown.pug

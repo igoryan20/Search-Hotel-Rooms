@@ -16,8 +16,11 @@
     "apply-loader": "^2.0.0",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.0.3",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
+    "material-icons": "^0.3.1",
     "pug": "^3.0.0",
     "pug-html-loader": "^1.1.5",
     "pug-loader": "^2.4.0",
@@ -27,5 +30,8 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@material/button": "^7.0.0"
   }
 }

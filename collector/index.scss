@@ -1,8 +1,10 @@
 @import '../components/other/colors';
-@import '../components/other/fonts/fonts';
+@import '../components/other/fonts/montserrat';
+@import '../components/other/fonts/material-design';
 
 @import '../components/logo/logo.scss';
 @import '../components/text_field/text-field.scss';
+@import '../components/dropdown/dropdown';
 
 .logo{
     margin-top: 1.85em;
@@ -24,35 +26,36 @@
             display: flex;
             flex-direction: column;
             .text-fields_item{
-                margin-bottom: 0.3em;
-                .text-field-description {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    text-transform: uppercase;
-                    .name {
-                        font-family: 'Montserrat', serif;
-                        font-size: 12px;
-                        font-weight: bold;
-                        color: $dark-shade-100;
-                        margin-top: 1.45em;
-                        margin-left: 0.2em;
-                        margin-bottom: 0;
-                    }
-                    .modificator {
-                        font-family: 'Montserrat', serif;
-                        font-size: 12px;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-weight: bold;
-                        margin-top: 1.2em;
-                        margin-right: 0.45em;
-                        margin-bottom: 0.6em;
-                        color: $dark-shade-50;
-                    }
-                }
+                margin-bottom: 0.3em;                
             }
         }
     }
     
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+    .name {
+        font-family: 'Montserrat', serif;
+        font-size: 12px;
+        font-weight: bold;
+        color: $dark-shade-100;
+        margin-top: 1.45em;
+        margin-left: 0.2em;
+        margin-bottom: 0;
+    }
+    .modificator {
+        font-family: 'Montserrat', serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+        font-weight: bold;
+        margin-top: 1.2em;
+        margin-right: 0.45em;
+        margin-bottom: 0.6em;
+        color: $dark-shade-50;
+    }
 }

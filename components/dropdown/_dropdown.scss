@@ -1,0 +1,18 @@
+
+
+.dropdown {
+    border: 1px solid $dark-shade-25;
+    border-radius: 4px;
+    height: 2.85em;
+    width: 92%;
+    padding-left: 1.15em;
+    font-size: 14px;
+    .dropdown__text {
+        color: $dark-shade-75;
+        font-family: 'Montserrat';
+        font-size: 14px;
+    }
+    .dropdown__icon {
+        font-family: 'Material Icons', serif;
+    }
+}
