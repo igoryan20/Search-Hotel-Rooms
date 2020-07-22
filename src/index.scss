@@ -3,10 +3,8 @@
 @import 'components/other/fonts/material-design';
 
 @import 'components/logo/logo';
-@import 'components/text_field/text-field';
-@import 'components/dropdown/dropdown';
-@import 'components/text_field/mask_text_field/mask_text_field';
-@import 'components/dropdown/date_dropdown/date_dropdown';
+@import 'components/text_fields/text-field';
+@import 'components/dropdowns/dropdown';
 
 .logo{
     margin-top: 1.85em;
@@ -15,30 +13,64 @@
 
 
 .container {
-    margin-top: 3em;
-    margin-left: 8.25em;
+    //background-color: yellow;
+    margin: 3rem 5rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    .column-one {
+    .column {
         display: flex;
         flex-direction: column;
-        width: 25%;
+        margin: 0 1rem;
+        padding: 0 1rem; 
+        width: 45%;
+        //background-color: rgba(25, 25, 25, 0.5);
         .text-fields {
             display: flex;
             flex-direction: column;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0 1.25rem;
             .text-fields_item{
-                margin-bottom: 0.3em;                
+                box-sizing: border-box;
+                margin-bottom: 0.15rem;                
             }
+        }
+        .dropdown-position {
+            box-sizing: border-box;            
+            width: 100%;
+            padding: 0 1.25rem;
+        }
+        .mask-text-field-position {
+            box-sizing: border-box;            
+            width: 100%;
+            margin-top: 0.25rem;
+            padding: 0 1.25rem;
         }
         .date-dropdowns {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 95%;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0 1.25rem;
+            margin-top: 1.25rem;
+            .date-dropdown-position {
+                width: 47%;
+            }
         }
-    }
-    
+        .filter-date-position {
+            box-sizing: border-box;            
+            width: 100%;
+            margin-top: 1.5rem;
+            padding: 0 1.25rem;
+        }
+        .subscription-text-field-position {
+            box-sizing: border-box;            
+            width: 100%;
+            margin-top: 1.4rem;
+            padding: 0 1.25rem;
+        }
+    }    
 }
 
 .description {
@@ -46,24 +78,22 @@
     flex-direction: row;
     justify-content: space-between;
     text-transform: uppercase;
+    padding-bottom: 0.3rem;
     .name {
         font-family: 'Montserrat', serif;
-        font-size: 12px;
+        font-size: 11.5px;
         font-weight: bold;
+        letter-spacing: 0.03rem;
         color: $dark-shade-100;
-        margin-top: 1.45em;
-        margin-left: 0.2em;
+        margin-top: 1.2rem;
         margin-bottom: 0;
     }
     .modificator {
         font-family: 'Montserrat', serif;
         font-size: 12px;
-        font-style: normal;
-        font-weight: normal;
         font-weight: bold;
-        margin-top: 1.2em;
-        margin-right: 0.45em;
-        margin-bottom: 0.6em;
         color: $dark-shade-50;
+        margin-top: 1rem;
+        margin-bottom: 0;
     }
 }

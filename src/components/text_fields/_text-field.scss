@@ -1,7 +1,8 @@
 .text-field {
+    box-sizing: border-box;
     border-radius: 4px;
-    height: 3em;
-    width: 93.5%;
+    height: 2.75rem;
+    width: 100%;
     padding: 0 1em;
     font-size: 14px;
     border: 1px solid $dark-shade-25;
@@ -18,15 +19,20 @@
     }
     .text-field__text--focus_hover {
         color: $dark-shade-75;
+        font-size: 13.5px;
     }
     .text-field__icon {
         display: flex;
         align-items: center;
         margin: 0;
+        width: 1.15rem;
         font-family: 'Material Icons';
         font-size: 24px;
         color: #8ba4f9;
     }
 }
 
+.text-field--subscription {
+    width: 83%;
+}
 
