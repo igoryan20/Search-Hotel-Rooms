@@ -1,34 +1,31 @@
-
-@mixin placeholder($color){
-    .text-field__input::placeholder,
-    .text-field__input::-webkit-input-placeholder{
-        color: $color;
-        font-family:'Montserrat', serif;
-        font-size: 14px;
-    }
-    .text-field__input:-ms-input-placeholder,
-    .text-field__input::-ms-input-placeholder {
-        color: $color; 
-        font-family: 'Montserrat', serif;
-        font-size: 14px;
-    }
-}
-
 .text-field {
-    width: 100%;
-    .text-field__input {
-        border-radius: 4px;
-        height: 2.85em;
-        width: 92%;
-        padding-left: 1.15em;
-        font-size: 14px;
+    border-radius: 4px;
+    height: 3em;
+    width: 93.5%;
+    padding: 0 1em;
+    font-size: 14px;
+    border: 1px solid $dark-shade-25;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .text-field__text{
+        display: flex;
+        align-items: center;
+        color: $dark-shade-25;
+        font-family: 'Montserrat', sans-serif;
+        height: 100%;
+        margin: 0;        
     }
-    @include placeholder($dark-shade-25);
-    .text-field__input--default {
-        border: 1px solid $dark-shade-25;
+    .text-field__text--focus_hover {
+        color: $dark-shade-75;
     }
-    .text-field__input--focus-hover{
-        border: 1px solid $dark-shade-75;
+    .text-field__icon {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        font-family: 'Material Icons';
+        font-size: 24px;
+        color: #8ba4f9;
     }
 }
 
