@@ -1,12 +1,12 @@
-@import '../components/other/colors';
-@import '../components/other/fonts/montserrat';
-@import '../components/other/fonts/material-design';
+@import 'components/other/colors';
+@import 'components/other/fonts/montserrat';
+@import 'components/other/fonts/material-design';
 
-@import '../components/logo/logo.scss';
-@import '../components/text_field/text-field.scss';
-@import '../components/dropdown/dropdown';
-@import '../components/mask_text_field/mask_text_field';
-@import '../components/date_dropdown/date_dropdown';
+@import 'components/logo/logo';
+@import 'components/text_field/text-field';
+@import 'components/dropdown/dropdown';
+@import 'components/text_field/mask_text_field/mask_text_field';
+@import 'components/dropdown/date_dropdown/date_dropdown';
 
 .logo{
     margin-top: 1.85em;

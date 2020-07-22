@@ -2,44 +2,54 @@
 // Connect outline modules
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
 module.exports = {
 // Indicate entry and output - entry point and final bundle name
     entry: {
-        main: './collector/index.js',
-        form_element: './collector/index.js',
-        cards: './collector/index.js',
-        headers_footers: './collector/index.js'
+        main: '@/index.js'
     },
     output: {
-        filename: '[name].bundle.js',
-        path: path.resolve(__dirname, "pages"),
+        filename: '[name].js',
+        path: path.resolve(__dirname, "dist"),
     },
     module: {
         rules: [
-            {test: /\.css$/, loader: 'style-loader!css-loader'},
-            {test: /\.pug$/, use: ['html-loader', 'pug-html-loader']},
+            {   test: /\.pug$/, use: ['html-loader', 'pug-html-loader'] },
+            {
+                test: /\.css$/,
+                use: [MiniCssExtractPlugin,'css-loader']
+            },            
             {
                 test: /\.s[ac]ss$/i, 
-                use: [
-                    {loader: 'style-loader'},
-                    {loader: 'css-loader'},
-                    {loader: 'sass-loader'}
-                ]}
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' ]
+            }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             title: "Form Element",
-            template: './collector/index.pug',
-            filename: 'form-element.html'
+            template: path.resolve(__dirname, 'src/index.pug'),
+            filename: 'index.html',
+            mode: 'development'
         }),
-        //new CleanWebpackPlugin({ cleanStaleWebpackAssets: false })
+        new CleanWebpackPlugin(),
+        new MiniCssExtractPlugin({
+            filename: '[name].css'
+        })
+        
     ],
     mode: "development",
     devServer: {
-        contentBase: './pages',
+        contentBase: '@/dist',
+    },
+    resolve: {
+        alias: {
+            '@': path.resolve(__dirname, 'src'),
+            '@components': './src/components',
+            '@dist': './dist'
+        }
     }
 }
