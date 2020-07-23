@@ -5,6 +5,7 @@
 @import 'components/logo/logo';
 @import 'components/text_fields/text-field';
 @import 'components/dropdowns/dropdown';
+@import 'components/checkboxes/checkbox';
 
 
 body {
@@ -90,7 +91,20 @@ body {
             padding: 0 1.25rem;
             padding-right: 2rem;
         }
-
+        .checkbox-list-position {
+            box-sizing: border-box;            
+            width: 88%;
+            margin-top: 3.25rem;
+            padding: 0 1.25rem;
+            padding-right: 2rem;
+        }
+        .checkbox-list--expanded-position {
+            box-sizing: border-box;            
+            width: 88%;
+            margin-top: 2.5rem;
+            padding: 0 1.25rem;
+            padding-right: 2rem;
+        }
     }    
 }
 

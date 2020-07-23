@@ -189,6 +189,64 @@
   color: rgba(31, 32, 65, 0.25);
 }
 
+.checkbox-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkbox-list .checkbox-list__name {
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+  font-size: 11.5px;
+  font-weight: bold;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  color: #1f2041;
+  margin: 0;
+}
+.checkbox-list .checkbox-list__icon {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Material Icons", serif;
+  font-size: 24px;
+  height: 100%;
+  width: 2.5rem;
+  margin: 0;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.checkbox-list-list {
+  padding-top: 0.75rem;
+}
+.checkbox-list-list .checkbox-list-list_item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.6rem;
+}
+.checkbox-list-list .checkbox-list-list_item .checkbox-list-list_item__checked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.15rem;
+  width: 1.15rem;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  margin: 0;
+  margin-top: 0rem;
+  font-family: "Material Icons";
+  color: #8ba4f9;
+}
+.checkbox-list-list .checkbox-list-list_item .checkbox-list-list_item__text {
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.5);
+  margin: 0;
+  margin-left: 0.5rem;
+  margin-top: 0rem;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -267,6 +325,20 @@ body {
   box-sizing: border-box;
   width: 88%;
   margin-top: 0.15rem;
+  padding: 0 1.25rem;
+  padding-right: 2rem;
+}
+.container .column .checkbox-list-position {
+  box-sizing: border-box;
+  width: 88%;
+  margin-top: 3.25rem;
+  padding: 0 1.25rem;
+  padding-right: 2rem;
+}
+.container .column .checkbox-list--expanded-position {
+  box-sizing: border-box;
+  width: 88%;
+  margin-top: 2.5rem;
   padding: 0 1.25rem;
   padding-right: 2rem;
 }
