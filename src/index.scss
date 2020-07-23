@@ -6,6 +6,11 @@
 @import 'components/text_fields/text-field';
 @import 'components/dropdowns/dropdown';
 
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .logo{
     margin-top: 1.85em;
     margin-left: 1.35em;
@@ -70,6 +75,22 @@
             margin-top: 1.4rem;
             padding: 0 1.25rem;
         }
+        .dropdown--filed-position {
+            box-sizing: border-box;            
+            width: 88%;
+            margin-top: 5rem;
+            padding: 0 1.25rem;
+            padding-right: 2rem;
+        }
+
+        .dropdown--expanded-position {
+            box-sizing: border-box;            
+            width: 88%;
+            margin-top: 0.15rem;
+            padding: 0 1.25rem;
+            padding-right: 2rem;
+        }
+
     }    
 }
 
