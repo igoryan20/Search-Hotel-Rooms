@@ -1,9 +1,9 @@
-.checkbox-list {
+.checkbox-list-dropdown {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    .checkbox-list__name {
+    .checkbox-list-dropdown__name {
         box-sizing: border-box;
         font-family: 'Montserrat', serif;
         font-size: 11.5px;
@@ -13,7 +13,7 @@
         color: $dark-shade-100;
         margin: 0;
     }
-    .checkbox-list__icon {
+    .checkbox-list-dropdown__icon {
         box-sizing: border-box;
         display: flex;
         justify-content: center;
@@ -27,13 +27,23 @@
     }
 }
 
-.checkbox-list-list {
+.checkbox-list {
     padding-top: 0.75rem;
-    .checkbox-list-list_item {
+    .checkbox-list__name {
+        box-sizing: border-box;
+        font-family: 'Montserrat', serif;
+        font-size: 11.5px;
+        font-weight: bold;
+        letter-spacing: 0.03rem;
+        text-transform: uppercase;
+        color: $dark-shade-100;
+        margin: 0;
+    }
+    .checkbox-list__item {
         display: flex;
         align-items: center;
         padding-bottom: 0.6rem;
-        .checkbox-list-list_item__checked {
+        .checkbox-list__button {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -47,7 +57,7 @@
             font-family: 'Material Icons';
             color: #8ba4f9;
         }
-        .checkbox-list-list_item__text {
+        .checkbox-list__text {
             font-size: 14px;
             color: $dark-shade-50;
             margin: 0;
@@ -56,3 +66,4 @@
         }
     }
 }
+
