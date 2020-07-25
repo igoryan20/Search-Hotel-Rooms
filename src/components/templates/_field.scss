@@ -1,0 +1,47 @@
+
+.field {
+    border: 1px solid $dark-shade-25;
+    border-radius: 4px;
+    padding-left: 1rem;
+    width: 302px;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .field__text {
+        box-sizing: border-box;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: $dark-shade-75;
+    }
+    .field__text_lighter {
+        color: $dark-shade-25;
+    }
+    .field__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Material Icons', serif;
+        font-size: 24px;
+        height: 100%;
+        width: 2.5rem;
+        margin: 0;
+        color: $dark-shade-50;
+    }
+}
+
+.field_short {
+    width: 131px; 
+}
+
+.field_middle {
+    width: 250px;
+}
+
+.field_acute-angle-bottom-border {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}

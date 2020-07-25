@@ -1,62 +1,57 @@
+//- This file combine components pug files and make positions for each block
 doctype html
 html
     body
         include components/logo/logo.pug
         div(class="container")
             div(class="column")
-                div(class="text-fields")
-                    div(class="text-fields_item")
-                        div(class="description")
-                            p(class="name") Text field
-                            p(class="modificator") default
-                        include components/text_fields/text-field.pug
-                    div(class="text-fields_item")
-                        div(class="description")
-                            p(class="name") Text field
-                            p(class="modificator") hover / focus
-                        include components/text_fields/text-field-focus_hover.pug
-                div(class="dropdown-position")
+                div(class="field-position")
                     div(class="description")
-                        p(class="name") dropdown
-                        p(class="modificator") default
+                        h1(class="description__name") text field
+                        h2(class="description__modificator") default
+                    include components/text_fields/text-field.pug
+                div(class="field-position")
+                    div(class="description")
+                        h1(class="description__name") text field
+                        h2(class="description__modificator") hover / focus
+                    include components/text_fields/text-field--focus-hover.pug
+                div(class="field-position")
+                    div(class="description")
+                        h1(class="description__name") dropdown 
+                        h2(class="description__modificator") default
                     include components/dropdowns/dropdown.pug
-                div(class="mask-text-field-position")
+                div(class="field-position")
                     div(class="description")
-                        p(class="name") masked text field
-                        p(class="modificator") default
+                        h1(class="description__name") masked text field 
+                        h2(class="description__modificator") default
                     include components/text_fields/mask_text_field.pug
-                div(class="date-dropdowns")
-                    div(class="date-dropdown-position")
+                div(class="field-position field-position_between-middle  field-position_few-items")
+                    div(class="field-position__item")
                         div(class="description")
-                            p(class="name") date dropdown
-                        include components/dropdowns/date_dropdown.pug
-                    div(class="date-dropdown-position")
+                            h1(class="description__name") date dropdown
+                        include components/dropdowns/date_dropdown_field.pug
+                    div(class="field-position__item")     
                         div(class="description")
-                            p(class="name") date dropdown
-                        include components/dropdowns/date_dropdown--filled.pug
-                div(class="filter-date-position")
+                            h1(class="description__name") date dropdown
+                        include components/dropdowns/date_dropdown_field--filled.pug
+                div(class="field-position field-position_between-middle")
                     div(class="description")
-                        p(class="name") filter date dropdown
-                    include components/dropdowns/filter_date_dropdown.pug
-                div(class="subscription-text-field-position")
+                        h1(class="description__name") filter date dropdown
+                    include components/dropdowns/filter_date_dropdown_field.pug
+                div(class="field-position field-position_between-middle")
                     div(class="description")
-                        p(class="name") subscription text field
+                        h1(class="description__name") subscription text field
                     include components/text_fields/subscription_text_field.pug
-                div(class="dropdown--filed-position")
-                    div(class="description")
-                        p(class="name") dropdown
-                        p(class="modificator") default
-                    include components/dropdowns/dropdown--filled.pug
-                div(class="dropdown--expanded-position")
-                    div(class="description")
-                        p(class="name") dropdown
-                        p(class="modificator") expanded
-                    include components/dropdowns/dropdown--expanded.pug
-                div(class="checkbox-list-position")
-                    include components/checkboxes/checkbox-list.pug
-                div(class="checkbox-list--expanded-position")
-                    include components/checkboxes/checkbox-list--expanded.pug
+                div(class="field-position field-position_between-large")
+                    div(class="description description_middle")
+                        h1(class="description__name") dropdown
+                        h2(class="description__modificator") default
+                    include components/dropdowns/dropdown_field--filled.pug
+                div(class="field-position")
+                    div(class="description description_middle")
+                        h1(class="description__name") dropdown
+                        h2(class="description__modificator") expanded
+                    include components/dropdowns/dropdown_field--expanded.pug
+
             div(class="column")
-                div(class="checkbox-buttons-position")
-                    include components/checkboxes/checkbox-buttons.pug
-            div(class="column")    
+            div(class="column")
