@@ -1,11 +1,17 @@
+// import different fonts, colors, icons
 @import 'components/other/colors';
 @import 'components/other/fonts/montserrat';
 @import 'components/other/fonts/material-design';
 
+// import templates for components
+@import './components/templates/descriptions';
+
+// import components
 @import 'components/logo/logo';
 @import 'components/text_fields/text-field';
 @import 'components/dropdowns/dropdown';
 @import 'components/checkboxes/checkbox';
+@import 'components/radio-buttons/radio-buttons';
 
 
 body {
@@ -16,7 +22,6 @@ body {
     margin-top: 1.85em;
     margin-left: 1.35em;
 }
-
 
 .container {
     //background-color: yellow;
@@ -30,112 +35,30 @@ body {
         padding: 0 1rem; 
         width: 45%;
         //background-color: rgba(25, 25, 25, 0.5);
-        .text-fields {
+        .field-position {
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
-            width: 100%;
             padding: 0 1.25rem;
-            .text-fields_item{
-                box-sizing: border-box;
-                margin-bottom: 0.15rem;                
-            }
+            padding-top: 0.9rem;
+            padding-bottom: 0.1rem;
         }
-        .dropdown-position {
-            box-sizing: border-box;            
-            width: 100%;
-            padding: 0 1.25rem;
+        .field-position_between-middle {
+            padding-top: 2.5rem;
         }
-        .mask-text-field-position {
-            box-sizing: border-box;            
-            width: 100%;
-            margin-top: 0.25rem;
-            padding: 0 1.25rem;
+        .field-position_between-middle-plus {
+            padding-top: 3.25rem;
         }
-        .date-dropdowns {
-            display: flex;
+        .field-position_between-large {
+            padding-top: 5.6rem;
+        }
+        .field-position_few-items {
             flex-direction: row;
             justify-content: space-between;
-            box-sizing: border-box;
-            width: 100%;
-            padding: 0 1.25rem;
-            margin-top: 1.25rem;
-            .date-dropdown-position {
-                width: 47%;
+            .field-position__item {
+                display: flex;
+                flex-direction: column;
             }
         }
-        .filter-date-position {
-            box-sizing: border-box;            
-            width: 100%;
-            margin-top: 1.5rem;
-            padding: 0 1.25rem;
-        }
-        .subscription-text-field-position {
-            box-sizing: border-box;            
-            width: 100%;
-            margin-top: 1.4rem;
-            padding: 0 1.25rem;
-        }
-        .dropdown--filed-position {
-            box-sizing: border-box;            
-            width: 88%;
-            margin-top: 5rem;
-            padding: 0 1.25rem;
-            padding-right: 2rem;
-        }
-
-        .dropdown--expanded-position {
-            box-sizing: border-box;            
-            width: 88%;
-            margin-top: 0.15rem;
-            padding: 0 1.25rem;
-            padding-right: 2rem;
-        }
-        .checkbox-list-position {
-            box-sizing: border-box;            
-            width: 88%;
-            margin-top: 3.25rem;
-            padding: 0 1.25rem;
-            padding-right: 2rem;
-        }
-        .checkbox-list--expanded-position {
-            box-sizing: border-box;            
-            width: 88%;
-            margin-top: 2.5rem;
-            padding: 0 1.25rem;
-            padding-right: 2rem;
-        }
-        .checkbox-buttons-position {
-            box-sizing: border-box;            
-            width: 85%;
-            margin-top: 0.5rem;
-            padding: 0 2.75rem;
-            padding-right: 1.5rem;
-        }
-    }    
-}
-
-.description {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-transform: uppercase;
-    padding-bottom: 0.3rem;
-    .name {
-        font-family: 'Montserrat', serif;
-        font-size: 11.5px;
-        font-weight: bold;
-        letter-spacing: 0.03rem;
-        color: $dark-shade-100;
-        margin-top: 1.2rem;
-        margin-bottom: 0;
-    }
-    .modificator {
-        font-family: 'Montserrat', serif;
-        font-size: 12px;
-        font-weight: bold;
-        color: $dark-shade-50;
-        margin-top: 1rem;
-        margin-bottom: 0;
     }
 }
