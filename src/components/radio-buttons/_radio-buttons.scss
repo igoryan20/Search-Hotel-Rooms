@@ -1,0 +1,27 @@
+.radio-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    .radio-buttons__button {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-size: 24px;
+        color: $dark-shade-25;
+        margin-right: 8px;
+    }
+    .radio-buttons__button_checked {
+        background: $purple;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .radio-buttons__label {
+        margin: 0;
+        margin-right: 18px;
+        font-size: 14px;
+        color: $dark-shade-50;
+    }
+    .radio-buttons__label_checked {
+        color: $dark-shade-75;
+    }
+}
