@@ -129,6 +129,10 @@
   border-bottom-right-radius: 0;
 }
 
+.field__icon_purple:before {
+  display: inline;
+}
+
 .field__icon_purple {
   color: green;
 }
@@ -247,6 +251,52 @@
   margin: 0;
   font-size: 24px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.checkbox-list {
+  margin-top: 0.4rem;
+  width: 15rem;
+}
+.checkbox-list .checkbox-list__item {
+  display: flex;
+  flex-direction: row;
+  height: 1.9rem;
+  align-items: center;
+}
+.checkbox-list .checkbox-list__item .checkbox-list__checkbox-wrapper {
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  margin-right: 0.75rem;
+  z-index: -1;
+}
+.checkbox-list .checkbox-list__item .checkbox-list__checkbox-wrapper .checkbox-list__checkbox {
+  box-sizing: border-box;
+  width: 18px;
+  height: 18px;
+  margin-left: 1px;
+  margin-top: 1px;
+  background-color: white;
+  border-radius: 4px;
+}
+.checkbox-list .checkbox-list__item .checkbox-list__checkbox-wrapper .checkbox-list__checkbox .checkbox-list__checkbox-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Material Icons";
+  margin: 0;
+  background: linear-gradient(100deg, #bc9cff, 0%, #8ba4f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.checkbox-list .checkbox-list__item .checkbox-list__checkbox-wrapper_checked {
+  background-image: linear-gradient(100deg, #bc9cff, 0%, #8ba4f9 100%);
+}
+.checkbox-list .checkbox-list__item .checkbox-list__label {
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 body {

@@ -1,5 +1,9 @@
 @import '../templates/field';
 
+.field__icon_purple:before {
+    display: inline;
+}
+
 .field__icon_purple {
     //color: #8ba4f9;
     color: green;
